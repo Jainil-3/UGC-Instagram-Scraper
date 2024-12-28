@@ -1,0 +1,1101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* White text */
+    background-color: #333333; /* Near black background */
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-container.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1rem;
+    }
+}
+/* Navigation Bar */
+header {
+    background-color: #000000; /* Black */
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Section */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    color: #ffffff; /* White logo text */
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Space between links */
+}
+
+
+
+.nav-links a {
+    color: #ffffff; /* White nav links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFC107; /* Yellow hover effect */
+}
+
+/* Login Button Container */
+.signin-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Login Button */
+.signin-btn {
+    background-color: #FFC107; /* Yellow button */
+    color: #000000; /* Black text on button */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s; /* Transition for background and text color */
+}
+
+.signin-btn:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #FFC107; /* Yellow text on hover */
+    border: 1px solid #FFC107;
+}
+
+/* User Info Section */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+}
+
+.username {
+    color: #FFC107; /* Yellow color for username */
+    font-size: 16px;
+}
+
+
+.logout-btn {
+    background-color: #FFC107; /* Yellow background for logout button */
+    color: black; /* Black text */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: black; /* Darker yellow on hover */
+    color: #FFC107;
+    border: 1px solid #FFC107;
+}
+
+
+
+/* Hero Section (grey background) */
+.hero {
+    background-color: #333333; /* Light grey */
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Call to action button*/
+.cta-btn {
+    background-color: #FFC107;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.cta-btn:hover {
+    background-color: black;
+    color: #FFC107;
+    border: 1px solid #FFC107;
+}
+
+/* Pricing Section (black background) */
+.pricing-section {
+    background-color: #111; /* Black background */
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+
+}
+
+.pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.pricing-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background-color: #222; /* Slightly lighter black for cards */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Content */
+.pricing-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+}
+
+.price {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Hover Effect: Pop-out and shadow increase */
+.pricing-card:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+/* FAQ Section with Collapsible Boxes */
+.faq-section {
+    background-color: #333333; /* Dark background */
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    color: #FFC107; /* Yellow title color */
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background-color: #444444; /* Slightly lighter grey for FAQ box */
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #555555; /* Darker grey on hover */
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.faq-icon {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.faq-answer {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #FFF; /* White text for answer */
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+    }
+}
+
+
+
+/* Form Section */
+section {
+    padding: 4rem 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Login and Register Section Styles */
+.login-container, .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height to center vertically */
+    background-color: #333333; /* Dark gray background */
+}
+
+.login-form, .register-form {
+    background-color: #000000; /* Black background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    padding: 40px; /* Increased padding inside the form for a larger box */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Increased fixed max width */
+    text-align: center; /* Center text */
+    color: #ffffff; /* White text inside forms */
+}
+
+/* Input Styles */
+.login-form input, .register-form input {
+    width: 100%; /* Full width inputs */
+    padding: 0.8rem; /* Padding inside inputs */
+    margin-bottom: 1.5rem; /* Space between inputs */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Text size */
+    background-color: #ffffff; /* White background for inputs */
+    color: #333333; /* Dark text color inside inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for focus */
+}
+
+/* Input Focus Styles */
+.login-form input:focus, .register-form input:focus {
+    border-color: #FFC107; /* Yellow border on focus */
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.6); /* Light yellow glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+.login-form button, .register-form button {
+    background-color: #FFC107; /* Yellow button */
+    color: #000000; /* Black text */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 0.8rem 1.2rem; /* Padding for button, slightly larger for better UX */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 1rem; /* Button text size */
+    font-weight: bold; /* Bold button text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background and hover effect */
+}
+
+/* Button Hover Effect */
+.login-form button:hover, .register-form button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Button Group Styles */
+.button-group {
+    margin-top: 10px; /* Space above button group */
+    text-align: center;
+    justify-content: center; /* Center buttons horizontally */
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.button-group button {
+    background-color: #FFC107; /* Default button background */
+    color: #000; /* Default button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: background-color 0.3s, color 0.3s; /* Transition for background and text color */
+}
+
+.button-group button:hover {
+    background-color: #000; /* Black background on hover */
+    color: #FFC107; /* Yellow text on hover */
+    border: 1px solid #FFC107;
+}
+
+/* Google Sign-In Button */
+.google-login-container {
+    margin-top: 10px; /* Add space above the Google Sign-In button */
+
+}
+
+/* Google Sign-In Button */
+.google-sign-in-btn {
+    background-color: #4285F4 !important; /* Google Blue background */
+    color: white !important; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Invert colors on hover */
+.google-sign-in-btn:hover {
+    background-color: white !important; /* White background on hover */
+    color: #4285F4 !important; /* Google Blue text on hover */
+    border: 1px solid #4285F4 !important; /* Add a border for better visibility */
+}
+
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+}
+/* General container for the search */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px; /* Adds space between child elements */
+
+    width: 100%;
+    max-width: 600px; /* Adjust based on your layout */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+/* Input field styling */
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #007bff; /* Color changes on focus */
+}
+
+/* Button styling in Search Container */
+.search-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transition for background and text color */
+}
+
+.search-container button:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #007bff; /* Blue text on hover */
+}
+
+/* Optional filter or label styling */
+.search-container .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container .filter label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-container .filter select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* Search Page Container */
+.search-page {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center;
+    flex-direction: row;
+    
+    
+    padding: 2rem;
+    background-color: #333333; /* Same background as body */
+}
+
+/* Search Input Section */
+.search-input {
+    flex: 1; /* Take up space on the left */
+    padding: 1.5rem;
+    background-color: #000000; /* Black background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    margin-right: 2rem; /* Space between input and output */
+}
+
+/* Output Section */
+.output-section {
+    flex: 2; /* Take up more space on the right */
+    padding: 1.5rem;
+    background-color: #000000; /* Black background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Search Form Styles */
+.search-form {
+    display: flex; /* Align items in a row */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Input Styles */
+.search-input input {
+    width: 100%; /* Full width inputs */
+    padding: 0.8rem; /* Padding inside inputs */
+    margin-bottom: 1rem; /* Space between inputs */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Text size */
+    background-color: #ffffff; /* White background for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for focus */
+}
+
+/* Button Styles */
+.search-input button {
+    background-color: #FFC107; /* Yellow button */
+    color: #000000; /* Black text */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 0.8rem; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 1rem; /* Button text size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.search-input button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+
+/* Output Results */
+.results-container {
+    margin-top: 1rem; /* Space above the results */
+    max-height: 400px; /* Limit height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Individual Result Card */
+.result-card {
+    background-color: #444444; /* Slightly lighter black */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Padding inside the card */
+    margin-bottom: 1rem; /* Space between cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+
+
+/* SearchResults.css */
+.results-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+.results-table th, 
+.results-table td {
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 12px; /* Padding in cells */
+    text-align: left; /* Align text to the left */
+}
+
+.results-table th {
+    background-color: #000000; /* Light gray background for header */
+}
+
+.results-table tr:hover {
+    background-color: #977511; /* Highlight row on hover */
+}
+/* SearchResults.css */
+.profile-link {
+    color: #FFC107; /* Yellow color */
+    text-decoration: none; /* Remove underline */
+}
+
+.profile-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.clear-results-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: black; /* Button background */
+    border: 1px solid #FFC107; /* Border style */
+    cursor: pointer;
+    color: #FFC107; /* Button text color */
+  }
+  
+  .clear-results-button:hover {
+    background-color: lightgrey; /* Hover effect */
+  }
+
+  /* Footer.css */
+  @media (max-width: 600px) {
+
+    .footer {
+        
+        padding: 15px 0;
+        font-size: 14px;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        
+    }
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-links li {
+    margin: 0 15px; /* Decorative space between links */
+  }
+  
+  .footer-links li::after {
+    content: "|"; /* Decorative vertical line */
+    margin-left: 15px;
+    color: #FFC107; /* Adjust this color */
+  }
+  
+  .footer-links li:last-child::after {
+    content: ""; /* Remove the last separator */
+  }
+  
+  .footer-links a {
+    color: #FFA107; /* Link color */
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Optional hover effect */
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+ /* Past Searches button */
+.past-searches-button {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+
+    gap: 10px; /* Space between Search and View Past Searches buttons */
+
+  }
+  
+  .past-searches-button button {
+    background-color: #FFC107; /* Yellow color */
+    color: #333333; /* Dark gray text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .past-searches-button button:hover {
+    background-color: black; /* Darker yellow on hover */
+    color: #FFC107; /* White text on hover */
+    border: 1px solid #FFC107
+  }
+  
+  .past-searches-button button:focus {
+    outline: none;
+  }
+  
+  .past-searches-button button:active {
+    background-color: #cc9300; /* Even darker yellow on active click */
+  }
+  
+  /* Past Searches Table */
+  .past-searches-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+        
+    background-color: #FFFFE0; /* Light Yellow */
+    /* Alternatively, use:
+       background-color: #FFD700; // Gold
+       background-color: #F0E68C; // Khaki
+    */
+    color: black;
+  }
+  
+  .past-searches-table th,
+  .past-searches-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .past-searches-table th {
+    background-color: #FFD700; /* Gold for header */
+    /* Alternatively, use:
+       background-color: #FFFFE0; // Light Yellow
+       background-color: #F0E68C; // Khaki
+    */
+    text-align: left;
+    color: #333333; /* Ensures text is readable */
+  }
+  
+  .past-searches-table tr:hover {
+    background-color: #FFFACD; /* Lemon Chiffon for hover effect */
+    cursor: pointer;
+  }
+  
+  /* Modal container */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: black;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Modal list styling */
+  .modal-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .modal-content li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #444444; /* Slightly lighter gray */
+    border-radius: 5px;
+  }
+  
+  /* Ensure the modal content remains scrollable without expanding */
+  .modal-content p {
+    margin: 5px 0;
+    color: #fff; /* White text for contrast */
+  }
+  /* Header user info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username {
+    color: #FFC107; /* Yellow color for username */
+    font-size: 16px;
+}
+
+
+/*Track search limit */
+.search-limit-message {
+    margin-top: 10px;
+    padding: 10px;
+    color: white; /* Change this to your desired text color */
+    background-color: red; /* Background color for the limit message */
+    border-radius: 5px;
+    text-align: center; /* Center the message */
+  }
+  
+
+  
+/* Reset default margins and paddings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+/* Main container setup */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Content area */
+.content {
+  flex: 1; /* Expands to fill available space */
+  padding: 20px;
+  background-color: #ffffff; /* Background color for content */
+}
+
+/* Footer styling */
+.footer {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Links */
+.footer a {
+  color: #FFD700; /* Yellow color for links */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Past Searches Table */
+.past-searches-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #FFFFE0; /* Light Yellow */
+}
+
+.past-searches-table th,
+.past-searches-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.past-searches-table th {
+  background-color: #FFD700; /* Gold for header */
+  text-align: left;
+  color: #333333; /* Ensures text is readable */
+}
+
+.past-searches-table tr:hover {
+  background-color: #FFFACD; /* Lemon Chiffon for hover effect */
+  cursor: pointer;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px 0;
+    font-size: 14px;
+  }
+
+  .past-searches-table th,
+  .past-searches-table td {
+    padding: 6px;
+  }
+}
+
+.subscription-tier {
+    margin-left: 15px;
+    font-weight: bold;
+    color: #4CAF50; /* Choose a color that fits your theme */
+}
+
+.nav-links a.active {
+    color: #FFC107; /* Example active color */
+    border-bottom: 2px solid #FFC107;
+}
+/* Checkout Page */
+.checkout-page {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.checkout-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-page button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkout-page button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.checkout-page {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.checkout-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-page button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkout-page button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Add these styles to your existing CSS file */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+  color: white;
+}
+
+.results-container {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.profile-card {
+  background-color: #444444;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.close-button {
+  background-color: #FFC107;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close-button:hover {
+  background-color: #FFD54F;
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Upgrade Button Styles */
+.upgrade-btn {
+    
+    background-color: #FFC107; /* Yellow background */
+    color: #333333; /* Dark text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px; /* Space above the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.upgrade-btn:hover {
+    background-color: #FFD54F; /* Lighter yellow on hover */
+    color: #000000; /* Darker text on hover */
+}
+
+.upgrade-btn:active {
+    background-color: #e0a800; /* Even darker yellow on click */
+    color: #ffffff; /* White text on click */
+}
